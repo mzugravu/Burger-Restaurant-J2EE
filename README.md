@@ -75,3 +75,9 @@ Now place yourself inside **tw_projet** and open a terminal. Type this:
 ```
 This will compile everything that is needed in order for you to see the website.
 Now open your browser and type this as an URL: **http://localhost:8080/BurgerINSA/WebContent/index.jsp**
+
+
+
+https://user-images.githubusercontent.com/47103062/160900031-2e30291a-c1e9-4c48-a200-4e9c3185f3a6.mp4
+
+
