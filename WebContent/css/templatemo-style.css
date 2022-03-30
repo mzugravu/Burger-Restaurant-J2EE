@@ -1,0 +1,189 @@
+
+
+  @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+  body {
+    background: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+  }
+
+
+
+  /*---------------------------------------
+     TYPOGRAPHY
+  -----------------------------------------*/
+
+  h1,h2,h3,h4,h5,h6 {
+    font-weight: bold;
+    line-height: inherit;
+  }
+
+  h1 {
+    color: #252525;
+    font-size: 3em;
+    line-height: 50px;
+  }
+
+  h2 {
+    color: #353535;
+    font-size: 2em;
+    padding-bottom: 10px;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    margin-bottom: 0;
+  }
+
+  h3,
+  h3 a {
+    color: #454545;
+  }
+
+  p {
+    color: #757575;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 24px;
+  }
+
+
+
+  /*---------------------------------------
+     GENERAL
+  -----------------------------------------*/
+
+  .section-title {
+    padding-bottom: 40px;
+  }
+
+  .section-title h2 {
+    margin: 0;
+  }
+
+  .section-title h4 {
+    color: #bfbdbd;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 0;
+  }
+
+  .overlay {
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  section {
+    position: relative;
+    padding: 100px 0;
+  }
+
+  /*---------------------------------------
+      ABOUT
+  -----------------------------------------*/
+
+  #about {
+    padding-bottom: 0;
+  }
+
+  .about-info {
+    padding: 0 6em 5em 0;
+  }
+
+  .about-info .section-title {
+    padding-bottom: 20px;
+  }
+
+  .about-image {
+    position: absolute;
+  }
+
+
+
+  /*---------------------------------------
+      TEAM
+  -----------------------------------------*/
+
+  #team {
+    background: #f9f9f9;
+  }
+
+  .team-thumb {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .team-info {
+    padding: 10px 30px 20px 30px;
+  }
+
+  .team-thumb .team-hover {
+    position: absolute;
+    background: #1c1c1c;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: 0.5s 0.2s;
+  }
+
+  .team-thumb:hover .team-hover {
+    opacity: 0.95;
+    transition-delay: 0.3s;
+    transform: translateY(0);
+  }
+
+  .team-thumb img {
+    transition: 0.5s 0.2s;
+  }
+
+  .team-thumb:hover img {
+    transform: scale(1.2);
+  }
+
+  .team-thumb .social-icon li a {
+    background: #292929;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    color: #d9d9d9;
+    font-size: 20px;
+    margin: 15px 5px 0 5px;
+  }
+
+  .team-thumb .team-item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+  }
+
+  .team-item h4 {
+    color: #ffffff;
+  }
+
+  .team-info p {
+    color: #bfbdbd;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 5px;
+  }

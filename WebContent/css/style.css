@@ -1,0 +1,393 @@
+*{
+    color: white;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+body{
+    overflow-x: hidden;
+}
+
+.errorPassword{
+  font-weight: 300;
+  color: #FF0000;
+  font-family: sans-serif;
+}
+
+.errorUserUnknown{
+  font-weight: 300;
+  color: #FF0000;
+  font-family: sans-serif;
+}
+.burger {
+  background-image: url("../images/burger.jpeg");
+  background-position: bottom;
+  background-size: cover;
+}
+.navbar{
+    height: 6rem;
+    width: 100vw;
+    background-color: #000000;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    position: fixed;
+    z-index: 10;
+}
+
+/*Styling logo*/
+
+.logo img {
+    height: 5rem;
+    width: 7rem;
+    position: relative;
+    top: 8px;
+    left: 50px;
+}
+
+/*Styling Links*/
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    width: 88vw;
+    padding: 0 0.7vw;
+    justify-content: space-evenly;
+    align-items: center;
+    text-transform: uppercase;
+}
+.nav-links li a{
+    text-decoration: none;
+    margin: 0 0.7vw;
+    color: white;
+}
+.nav-links li a:hover {
+    color: #ff2121;
+}
+.nav-links li {
+    position: relative;
+}
+.nav-links li a::before {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0%;
+    background-color: #ff2121;
+    position: absolute;
+    transition: all ease-in-out 250ms;
+    margin: 0 0 0 10%;
+}
+.nav-links li a:hover::before{
+    width: 80%;
+}
+
+
+/* Register Form */
+
+.register-photo {
+    background: #f1f7fc;
+    padding: 100px 100px 50px 100px;
+}
+
+.register-photo .image-holder {
+    display: table-cell;
+    width: 300px;
+    height: 300px;
+    background: url("../images/burger.jpg");
+    background-size: cover;
+}
+
+
+.register-photo .image-holder2 {
+    display: table-cell;
+    width: 300px;
+    height: 300px;
+    background: url("../images/form.jpg");
+    background-size: cover;
+}
+
+.register-photo .form-container {
+    display: table;
+    max-width: 900px;
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1)
+}
+
+.register-photo form {
+    display: table-cell;
+    width: 400px;
+    height: 500px,
+    background-color: #ffffff;
+    padding: 40px 60px;
+    color: #505e6c
+}
+
+@media (max-width:991px) {
+    .register-photo form {
+        padding: 40px
+    }
+}
+
+.register-photo form h2 {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    color: #000000;
+}
+.register-photo form strong {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    color: #000000;
+}
+
+.register-photo form .form-control {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #dfe7f1;
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
+    color: #000000;
+    text-indent: 0px;
+    height: 40px
+}
+
+.register-photo form .form-check {
+    font-size: 13px;
+    line-height: 20px
+}
+
+.register-photo form .btn-primary {
+    background: green;
+    border: none;
+    border-radius: 4px;
+    padding: 11px;
+    box-shadow: none;
+    margin-top: 35px;
+    text-shadow: none;
+    outline: none !important
+}
+
+.register-photo form .btn-primary:hover,
+.register-photo form .btn-primary:active {
+    background: green
+}
+
+.register-photo form .btn-primary:active {
+    transform: translateY(1px)
+}
+
+.register-photo form .already {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: green;
+    opacity: 0.9;
+    text-decoration: none
+}
+.form-control {
+  color: #000000;
+}
+
+.contact-form  form{
+  display: inline-block;
+  text-align: center;
+  padding: 100px 100px 0px 50px;
+
+}
+
+.form-control {
+  text-align: left;
+  color: #000000;
+  font-size: 20px;
+}
+
+.subject {
+  text-align: left;
+  color: #000000;
+  font-size: 20px;
+}
+
+.select {
+  color: #000000;
+}
+.button{
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+.btn{
+  padding-top: 10px;
+}
+.divMail{
+  padding-bottom: 10px;
+}
+.textarea {
+  width: 450px;
+  color: #000000;
+}
+
+.dropSelect {
+  color: #000000;
+}
+
+.divTextArea {
+  padding-top: 10px;
+}
+
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+/*About*/
+h1,h2,h3,h4,h5,h6 {
+  font-weight: bold;
+  line-height: inherit;
+}
+
+h1 {
+  color: #252525;
+  font-size: 3em;
+  line-height: 50px;
+}
+
+h2 {
+  color: #353535;
+  font-size: 2em;
+  padding-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin-bottom: 0;
+}
+
+h3,
+h3 a {
+  color: #454545;
+}
+
+p {
+  color: #757575;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+}
+
+#about {
+  padding-bottom: 0;
+}
+
+.about-info {
+  padding: 0 6em 5em 0;
+}
+
+.about-info .section-title {
+  padding-bottom: 20px;
+}
+
+.about-image {
+  position: absolute;
+}
+
+
+.single_service_icon img{
+    height: 70px;
+}
+
+.column {
+ float: left;
+ width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+ content: "";
+ display: table;
+ clear: both;
+}
